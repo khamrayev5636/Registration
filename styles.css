@@ -1,0 +1,142 @@
+/* VARIABLES */
+:root{
+    /* --main-text-color : #fff; */
+    /* --main-bg-color : #fff; */
+    /* --main-font-size : 16px; */
+    /* --main-font-weight : 400; */
+    /* --main-line-height : 1.5; */
+}
+*{
+    box-sizing: border-box;
+}
+/* GENERAL */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    height: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* font-family: --, "Arial", sans-serif; */
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+    flex-grow: 1;
+}
+.box{
+    width: 600px;
+    margin-top: 100px;
+    background-color: yellow;
+    /* border-radius: 10px; */
+    padding: 50px;
+}
+.text__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reset__form{
+    background-image: url("./img/xmark-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+.info__wrapper {
+    position: relative;
+    margin-top: 100px;
+    width: 600px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    padding: 80px 20px 30px 20px;
+}
+.avatar__img{
+    position: absolute;
+    top: -65px;
+    border-radius: 50%;
+}
+.user__name-label {
+    color: #000;
+    opacity: 0.5;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+::placeholder {
+    color: #000;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.user__name{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    border-bottom: 1px solid #bebbbb;
+    resize: vertical;
+}
+.surename__wrapper {
+    display: flex;
+    border-bottom: 1px solid #bebbbb;
+    margin-bottom: 10px;
+}
+.wrapper__first-username {
+    margin-right: 100px;
+}
+.first__name {
+    border: none;
+}
+
+.wrapper__links {
+    display: flex;
+    justify-content: flex-end;
+}
+.cansel_btn {
+    border: none;
+    background-color: transparent;
+    color: #292929;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 30px;
+}
